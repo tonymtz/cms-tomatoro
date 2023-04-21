@@ -2,7 +2,7 @@
   "name": "cms-tomatoro",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "CMS Tomatoro",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,16 +11,10 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.9.1",
-    "@strapi/plugin-users-permissions": "4.9.1",
-    "@strapi/plugin-i18n": "4.9.1",
-    "pg": "8.8.0"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "4b2fbc54-ffc0-46a9-839a-c83e6aa989ce"
+    "@strapi/strapi": "4.9.2",
+    "@strapi/plugin-users-permissions": "4.9.2",
+    "@strapi/plugin-i18n": "4.9.2",
+    "pg": "8.10.0"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
