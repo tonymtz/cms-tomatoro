@@ -41,7 +41,7 @@
       "type": "uid",
       "targetField": "title",
       "required": true,
-      "minLength": 4,
+      "minLength": 3,
       "maxLength": 120
     }
   }
