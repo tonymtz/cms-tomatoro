@@ -43,6 +43,12 @@
       "required": true,
       "minLength": 3,
       "maxLength": 120
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "blogs"
     }
   }
 }
