@@ -30,6 +30,16 @@
         }
       },
       "type": "richtext"
+    },
+    "date": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "date",
+      "required": true,
+      "unique": true
     }
   }
 }
