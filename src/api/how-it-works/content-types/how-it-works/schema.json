@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "how_it_workss",
+  "info": {
+    "singularName": "how-it-works",
+    "pluralName": "how-it-workss",
+    "displayName": "How it works"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    },
+    "excerpt": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    },
+    "seo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seo.seo"
+    }
+  }
+}

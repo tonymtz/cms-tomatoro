@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "error_404s",
+  "info": {
+    "singularName": "error-404",
+    "pluralName": "error-404s",
+    "displayName": "Error 404"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    },
+    "excerpt": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    },
+    "seo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seo.seo"
+    }
+  }
+}

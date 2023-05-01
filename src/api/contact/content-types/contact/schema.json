@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
-  "collectionName": "seos",
+  "kind": "singleType",
+  "collectionName": "contacts",
   "info": {
-    "singularName": "seo",
-    "pluralName": "seos",
-    "displayName": "SEO",
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact Page",
     "description": ""
   },
   "options": {
@@ -25,42 +25,28 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "content": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "text",
-      "required": false
+      "type": "richtext",
+      "required": true
     },
-    "keywords": {
+    "excerpt": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
-      "required": false
+      "type": "richtext",
+      "required": true
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "post": {
+    "seo": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::post.post",
-      "inversedBy": "seo"
+      "target": "api::seo.seo"
     }
   }
 }
