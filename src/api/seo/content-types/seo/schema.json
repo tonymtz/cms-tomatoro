@@ -55,12 +55,6 @@
           "localized": true
         }
       }
-    },
-    "post": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::post.post",
-      "inversedBy": "seo"
     }
   }
 }
