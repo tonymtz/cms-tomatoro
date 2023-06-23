@@ -4,7 +4,8 @@
   "info": {
     "singularName": "update",
     "pluralName": "updates",
-    "displayName": "Update"
+    "displayName": "Update",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,12 +27,12 @@
     "date": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "date",
       "required": true,
-      "unique": true
+      "unique": false
     }
   }
 }
