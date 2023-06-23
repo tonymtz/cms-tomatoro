@@ -1,7 +1,7 @@
 {
   "name": "cms-tomatoro",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CMS Tomatoro",
   "scripts": {
     "develop": "strapi develop",
