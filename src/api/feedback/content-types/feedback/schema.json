@@ -15,8 +15,7 @@
     "content": {
       "type": "text",
       "required": false,
-      "maxLength": 420,
-      "minLength": 10
+      "maxLength": 420
     },
     "liked": {
       "type": "boolean",
