@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "static_pages",
   "info": {
-    "singularName": "post",
-    "pluralName": "posts",
-    "displayName": "Post",
+    "singularName": "static-page",
+    "pluralName": "static-pages",
+    "displayName": "Static Page",
     "description": ""
   },
   "options": {
@@ -31,18 +31,19 @@
           "localized": true
         }
       },
-      "type": "uid",
-      "targetField": "title",
-      "required": true,
-      "minLength": 3
+      "type": "string",
+      "unique": true,
+      "required": true
     },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "posts"
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
     },
-    "hero": {
+    "thumbnail": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -51,18 +52,9 @@
       ],
       "pluginOptions": {
         "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "content": {
-      "pluginOptions": {
-        "i18n": {
           "localized": true
         }
-      },
-      "type": "richtext",
-      "required": false
+      }
     },
     "seo": {
       "type": "component",

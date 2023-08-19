@@ -18,10 +18,7 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  'import-export-entries': {
+  seo: {
     enabled: true,
-    config: {
-      // See `Config` section.
-    },
   },
 });
