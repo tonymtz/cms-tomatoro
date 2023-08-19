@@ -24,7 +24,11 @@ export default ({ env }) => {
           ),
         },
       },
-      pool: { min: env.int('DATABASE_POOL_MIN', 0), max: env.int('DATABASE_POOL_MAX', 10) },
+      pool: {
+        min: env.int('DATABASE_POOL_MIN', 0),
+        max: env.int('DATABASE_POOL_MAX', 10),
+        acquireTimeoutMillis: env.int('DATABASE_POOL_ACQUIRE_TIMEOUT', 30000),
+      },
     },
     mysql2: {
       connection: {
