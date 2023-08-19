@@ -41,14 +41,13 @@ COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/favicon.png ./favicon.png
 COPY --from=builder /app/.strapi-updater.json ./.strapi-updater.json
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/config ./config
+COPY --from=builder /app/database ./database
 
 USER nextjs
 
 EXPOSE 1337
 
 ENV PORT 1337
-
-RUN echo "debug information"
-RUN echo $DATABASE_CLIENT
 
 CMD ["yarn", "start"]
