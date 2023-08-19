@@ -36,6 +36,21 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ env.IMAGE_URL }}
+          build-args: |
+            APP_KEYS=${{ secrets.APP_KEYS }}
+            API_TOKEN_SALT=${{ secrets.API_TOKEN_SALT }}
+            ADMIN_JWT_SECRET=${{ secrets.ADMIN_JWT_SECRET }}
+            TRANSFER_TOKEN_SALT=${{ secrets.TRANSFER_TOKEN_SALT }}
+            JWT_SECRET=${{ secrets.JWT_SECRET }}
+            DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}
+            CLOUDINARY_KEY=${{ secrets.CLOUDINARY_KEY }}
+            CLOUDINARY_SECRET=${{ secrets.CLOUDINARY_SECRET }}
+            DATABASE_CLIENT=${{ vars.DATABASE_CLIENT }}
+            DATABASE_HOST=${{ vars.DATABASE_HOST }}
+            DATABASE_PORT=${{ vars.DATABASE_PORT }}
+            DATABASE_NAME=${{ vars.DATABASE_NAME }}
+            DATABASE_USERNAME=${{ vars.DATABASE_USERNAME }}
+            CLOUDINARY_NAME=${{ vars.CLOUDINARY_NAME }}
 
       # Deploy to CapRover
       - name: Deploy Image to CapRover
